@@ -1,0 +1,12 @@
+[submodule "modules/openldap"]
+	path = modules/openldap
+	url = https://github.com/camptocamp/puppet-openldap
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "modules/augeasproviders_core"]
+	path = modules/augeasproviders_core
+	url = https://github.com/hercules-team/augeasproviders_core
+[submodule "modules/augeasproviders_shellvar"]
+	path = modules/augeasproviders_shellvar
+	url = https://github.com/hercules-team/augeasproviders_shellvar

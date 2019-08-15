@@ -1,0 +1,5 @@
+fixtures:
+    symlinks:
+        git: "#{source_dir}"
+        stdlib: "../../../../stdlib"
+        wmflib: "../../../../wmflib"
