@@ -1,9 +1,7 @@
-dn: uid=test,dc=example,dc=org
+dn: cn=test,dc=example,dc=org
 objectclass: person
 objectclass: inetOrgPerson
 objectclass: organizationalPerson
-cn: John Doe
-sn: Doe
-uid: jdoe
+uid: test
 userpassword: changeme
 preferredLanguage: mfa-gauth
