@@ -7,11 +7,13 @@ Vagrant.configure('2') do |config|
   config.vm.box = 'debian/buster64'
   config.vm.network('forwarded_port', guest: 8443, host: 8443, host_ip: '127.0.0.1')
   config.vm.provider 'virtualbox' do |vb|
-    vb.memory = '2048'
+    vb.name = 'cas_test'
+    vb.memory = '4096'
+    vb.cpus = 4
   end
   config.vm.provision 'shell', inline: <<-SHELL
      apt-get update
-     apt-get install -y puppet
+     apt-get install -y puppet vim
   SHELL
   config.vm.provision 'puppet' do |puppet|
     puppet.module_path = 'modules'

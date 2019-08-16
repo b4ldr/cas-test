@@ -21,6 +21,8 @@ management.metrics.export.prometheus.enabled=<%= @enable_prometheus %>
 
 
 
+cas.authn.mfa.globalPrincipalAttributeNameTriggers=preferredLanguage
+
 cas.authn.accept.users=
 
 cas.authn.ldap[0].principalAttributeList=<%= @ldap_attribute_list.join(',') %>
@@ -29,13 +31,11 @@ cas.authn.ldap[0].connectionStrategy=<%= @ldap_connection %>
 cas.authn.ldap[0].ldapurl=<%= @ldap_uris.join(' ') %>
 cas.authn.ldap[0].useStartTLS=<%= @ldap_start_tls %>
 # just here for the vagrant test
-cas.authn.ldap[0].useSsl=<%= @ldap_start_tls %>
+cas.authn.ldap[0].useSsl=false
 cas.authn.ldap[0].basedn=<%= @ldap_base_dn %>
 cas.authn.ldap[0].searchFilter=<%= @ldap_search_filter %>
 cas.authn.ldap[0].binddn=<%= @ldap_bind_dn %>
 cas.authn.ldap[0].bindcredential=<%= @ldap_bind_pass %>
-
-cas.authn.mfa.globalProviderId=mfa-gauth
 
 cas.authn.mfa.gauth.json.location=file://<%= @gauth_devices_path %>
 <% if @gauth_signing_key %>cas.authn.mfa.gauth.crypto.signing.key=<%= @gauth_signing_key %><% end %>

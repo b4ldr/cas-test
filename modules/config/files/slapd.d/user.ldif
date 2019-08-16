@@ -1,0 +1,9 @@
+dn: uid=test,dc=example,dc=org
+objectclass: person
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+cn: John Doe
+sn: Doe
+uid: jdoe
+userpassword: changeme
+preferredLanguage: mfa-gauth
