@@ -51,6 +51,8 @@ class apereo_cas (
     }
     git::clone {$overlay_repo:
         ensure    => 'latest',
+        origin    => $overlay_repo,
+        branch    => '6.0',
         directory => $overlay_dir,
     }
     file {"${config_dir}/cas.properties":

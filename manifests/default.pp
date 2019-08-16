@@ -7,4 +7,5 @@ class { 'apereo_cas':
     ldap_bind_dn        => 'cn=admin,dc=example,dc=org',
     ldap_attribute_list => ['preferredLanguage'],
     log_level           => 'DEBUG',
+    overlay_repo        => 'https://github.com/b4ldr/cas-overlay-template',
 }
