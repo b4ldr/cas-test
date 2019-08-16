@@ -3,5 +3,6 @@ objectclass: person
 objectclass: inetOrgPerson
 objectclass: organizationalPerson
 uid: test
+sn: user
 userpassword: changeme
 preferredLanguage: mfa-gauth
